@@ -5,8 +5,20 @@ import ReactDOM from 'react-dom';
 //    module.hot,accept();
 //}
 
+function getButtonText(){
+    return 'Click Me!';
+}
+
 const App = () => {
-   return <div>Hi there!</div>
+  return (
+  <div>
+    <label className="label" htmlFor='name'>
+      Enter Name:
+    </label>
+    <input id="name" type="text"></input>
+    <button style={{ backgroundColor: 'blue' ,color: 'white'}}>{getButtonText()}</button>
+  </div>
+   );
 };
 
 ReactDOM.render(
